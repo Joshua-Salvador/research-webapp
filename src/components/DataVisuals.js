@@ -35,6 +35,8 @@ function DataVisuals() {
     };
     getOccupationData();
     console.log(occupationData);
+
+    // eslint-disable-next-line
   }, [db]);
 
   useEffect(() => {
