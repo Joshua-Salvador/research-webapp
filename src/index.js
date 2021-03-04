@@ -10,14 +10,7 @@ import theme from "./MuiTheme";
 
 import firebase from "firebase";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyDcfO7vs9q4xCkXjaFXv1byKWKVB8YlBbE",
-  authDomain: "usc-shs-research02.firebaseapp.com",
-  projectId: "usc-shs-research02",
-  storageBucket: "usc-shs-research02.appspot.com",
-  messagingSenderId: "1068215553841",
-  appId: "1:1068215553841:web:d12813330a326c00572a10",
-};
+const firebaseConfig = process.env.REACT_APP_FIREBASE_CONFIG;
 
 firebase.initializeApp(firebaseConfig);
 
